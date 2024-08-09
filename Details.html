@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Apeකඩේ.lk</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html" class="logo-link">
+                <img src="./Logo2.png" alt="Apeකඩේ.lk Logo" class="logo-img">
+            </a>
+        </div>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Order.html" class="active">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Checkout Page (for when Buy Now is clicked) -->
+    <section id="checkout" class="hidden">
+        <h2>Checkout</h2>
+        <div class="orderSummary-container">
+            <div class="order-summary" id="orderSummary">
+                <!--Order details will be displayed here-->
+                <h2>Order Summary</h2>
+                <p></p>
+            </div>
+        </div>
+        <form id="checkout-form">
+            <fieldset>
+                <legend>Personal Details</legend></br>
+                <div class ="input-fields">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required></br></br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Details</legend></br>
+                <div class ="input-fields">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required></br></br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend></br>
+                <div class ="input-fields">
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text" id="credit-card"name="credit-card" required>
+                <label for="billing-address">Billing Address:</label>
+                <input type="text" id="billing-address" name="billing-address" required></br></br>
+                </div>
+            </fieldset></br></br>
+
+            <button id="pay-now-btn">Pay Now</button>
+        </form>
+
+            <script src="./Details.js"></script>
+    </section>

@@ -1,0 +1,301 @@
+/* Basics */
+.footer-container {
+    padding: 0 20px; 
+}
+/* Set margin-bottom for all sections */
+section {
+    margin-bottom: 40px; /* Adjust as needed */
+}
+
+/* Add border between sections */
+section + section {
+    border-top: 1px solid #EB2424; /* Adjust color as needed */
+}
+
+/* Set font for various elements */
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Homepage Styling */
+main h2 {
+    text-align: center;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #EB2424;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    height: 150px;
+    min-height: 10vh;
+    background-color: #EB2424;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.logo-link {
+    display: flex; 
+}
+
+.logo-img {
+    width: auto; /* Set the desired width */
+    height: 150px; /* Maintain aspect ratio */
+    display: flex; /* Ensure the image does not expand its container */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #EB2424;
+    border-radius: 20px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; /* Transition */
+}
+
+nav ul li a:hover {
+    background-color: #ff4d4d; 
+}
+
+nav ul li a.active {
+    background-color: #ffffff; 
+    color: #EB2424; 
+}
+
+.img-container {
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
+    float: left;
+}
+
+.img-container img {
+    height: 100%;
+    width: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #EB2424;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.logo2 {
+    width: auto; 
+    height: 150px; 
+    display: flex;
+}
+
+.contact-info {
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.follow-us,
+.quick-links {
+    flex: 1; 
+    text-align: center; 
+    margin: 10px; 
+}
+
+/* Nav bar icons */
+.follow-us ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.follow-us ul li {
+    display: inline-block; 
+    margin-right: 0px; 
+}
+
+.follow-us ul li:last-child {
+    margin-right: 0;
+}
+
+.follow-us ul li a img {
+    width: 30px; 
+    height: 30px;
+}
+
+/*checkout styling*/
+
+#checkout {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.0);
+    margin: 100px 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-fields {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset { 
+    border: 1px solid #EB2424;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 200%;
+    align-self: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+button {
+    background: #77E648;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #EB2424;
+}
+
+/* Order Summary Section */
+#orderSummary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Order Summary Table */
+#orderSummary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#orderSummary table thead {
+    background-color: #EB2424;
+    color: white;
+}
+
+#orderSummary table th, #orderSummary table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#orderSummary table th {
+    font-weight: bold;
+}
+
+#orderSummary table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#orderSummary table tfoot {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
